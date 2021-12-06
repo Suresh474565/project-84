@@ -1,5 +1,6 @@
 canvas = document.getElementById("myCanavs");
-ctx = canvas.getContext("2d");
+ctx = myCanvas.getContext("2d");
+
 
 img_width = 300;
 img_height = 100;
@@ -28,7 +29,7 @@ function my_keydown(e) {
 
 	if ((keyPressed >= 97 && keyPressed <= 122) || (keyPressed >= 65 && keyPressed <= 90)) {
 
-		aplhabetkey()
+		aplhabetkey();
 		document.getElementById("d1").innerHTML = "You pressed Alphabet key";
 		console.log("alph key");
 	} 
@@ -37,7 +38,7 @@ function my_keydown(e) {
 
 	{
 
-		numberkey()
+		numberkey();
 		document.getElementById("d1").innerHTML = "You pressed number key";
 		console.log("number key");
 
@@ -47,7 +48,7 @@ function my_keydown(e) {
 
 	{
 
-		arrowkey()
+		arrowkey();
 		document.getElementById("d1").innerHTML = "You pressed arrow key";
 		console.log("arrow key");
 
@@ -57,7 +58,7 @@ function my_keydown(e) {
 
 	{
 
-		specialkey()
+		specialkey();
 		document.getElementById("d1").innerHTML = "You pressed special key";
 		console.log("special key");
 
